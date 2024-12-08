@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c02f711c53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://github.com/Nyazashali/Images/blob/main/Shaik%20Najesh%20Ali%20Logo.png?raw=true" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" id="close-btn" onclick="closemenu()"></i>
+                </ul>
+                
+                <i class="fas fa-bars" id="open-btn" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>FrontEnd Developer</p>
+                <h1>Hi, I'm <span>Shaik Najesh Ali</span> <br>From Hyderabad</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://github.com/Nyazashali/Images/blob/main/2.jpg?raw=true" class="image-container" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and driven Frontend Developer, eager to kickstart my career in web development. With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating visually appealing, responsive, and user-friendly websites.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Technologies:</span><br> HTML5, CSS3, JavaScript, Bootstrap, React.js</li>
+                            <li><span>Version Control:</span><br> Git, GitHub</li>
+                            <li><span>Database:</span><br> MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024:</span><br> BSc (Computer Science) from G. Pulla Reddy Degree & P.G. College, Osmania University</li>
+                            <li><span>2020:</span><br> Intermediate [MPC] from Sri Gayatri Educational Institutions</li>
+                            <li><span>2018:</span><br> SSC from M.P.C.R Memorial High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- My Projects -->
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+
+                <!--Calculator-->
+                <div class="work">
+                    <img src="https://github.com/Nyazashali/Images/blob/main/Calculator.png?raw=true">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Developed a responsive Calculator to perform basic arithmetic operations.
+                          The calculator features a clean user interface, real-time input display, and error handling,</p>
+                        <a href="https://nyazash-calculator.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> 
+
+                <!--Task Manager-->
+                <div class="work">
+                    <img src="https://github.com/Nyazashali/Images/blob/main/Task%20Manager.png?raw=true">
+                    <div class="layer">
+                        <h3>Task Manager</h3>
+                        <p>Developed a dynamic Task Manager.The app features a user-friendly interface, real-time updates, and task status tracking.</p>
+                        <a href="https://to-do-list-by-nyazash.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!--E-commerce website-->
+                <div class="work">
+                    <img src="https://github.com/Nyazashali/Images/blob/main/E-Commerce%20Wenbsite.jpg?raw=true">
+                    <div class="layer">
+                        <h3>E-Commerce Website </h3>
+                        <p>Designed and developed a dynamic E-Commerce website.
+                           The site includes product listings, a shopping cart, and a responsive user interface for seamless browsing.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="Images/My CV.docx" download class="btn">Download CV</a>
+        </div>
+    </div>
+<!------Contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> Shaik.nyazashali@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8801004229</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100008912670763" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://x.com/nyazashalishaik?t=_q-MTOSOQKGpNxPeqqiVSA&s=09" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/shaik.nyazash_ali?igsh=dm1pa3F3a2s1dnpr" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shaik-nyazashali-709b74238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Nyazashali" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="abb42aad-bf38-4da6-ac9e-c2b9d222af9a">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2024 Shaik Najesh Ali. All Rights Reserved. </p>
+    </div>
+</div>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tabLinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+       
+       var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+       const openBtn = document.getElementById("open-btn");
+const closeBtn = document.getElementById("close-btn");
+const navMenu = document.querySelector("nav ul");
+
+openBtn.addEventListener("click", () => {
+    navMenu.style.transform = "translateX(0)";
+    openBtn.style.display = "none";
+    closeBtn.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+    navMenu.style.transform = "translateX(100%)";
+    openBtn.style.display = "block";
+    closeBtn.style.display = "none";
+});
+
+    </script>
+</body>
+</html>
